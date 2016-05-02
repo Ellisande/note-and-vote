@@ -7,10 +7,10 @@ var sass = require('gulp-sass');
 var webpack = require('gulp-webpack');
 var express = require('express');
 
-var cssDestination = 'assets/css';
-var imgDestination = 'assets/img';
-var jsDestination = 'assets/js';
-var fontDestination = 'assets/fonts';
+var cssDestination = 'css';
+var imgDestination = 'img';
+var jsDestination = 'js';
+var fontDestination = 'fonts';
 
 // Serve up app.
 gulp.task('serve', function() {
