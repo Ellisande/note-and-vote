@@ -21,7 +21,7 @@ function render(){
   ReactDOM.render(
     <Provider store={store}>
       <Router history={browserHistory}>
-        <Route path='/note-and-vote' >
+        <Route path='/note-and-vote/' >
           <Route path='/' component={App}>
             <IndexRoute component={MeetingList} />
             <Route path='how' component={How}/>

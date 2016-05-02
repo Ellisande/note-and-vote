@@ -114,7 +114,7 @@
 	      { history: _reactRouter.browserHistory },
 	      _react2.default.createElement(
 	        _reactRouter.Route,
-	        { path: '/note-and-vote' },
+	        { path: '/note-and-vote/' },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: _app2.default },
