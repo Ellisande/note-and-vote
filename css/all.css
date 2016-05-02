@@ -2085,7 +2085,7 @@ body a {
   min-height: 600px;
   padding-bottom: 30px;
   overflow: hidden;
-  background: linear-gradient(rgba(170, 124, 227, 0.45), rgba(170, 124, 227, 0.45)), url("/img/city-scape.jpg");
+  background: linear-gradient(rgba(170, 124, 227, 0.45), rgba(170, 124, 227, 0.45)), url("/note-and-vote/img/city-scape.jpg");
   background-size: cover; }
 
 .middle-box {

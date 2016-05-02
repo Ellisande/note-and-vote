@@ -21,13 +21,13 @@ function render(){
   ReactDOM.render(
     <Provider store={store}>
       <Router history={browserHistory}>
-        <Route path='/' component={App}>
+        <Route path='/note-and-vote/' component={App}>
           <IndexRoute component={MeetingList} />
           <Route path='how' component={How}/>
           <Route path='when' component={When}/>
           <Route path='safety' component={Safety} />
         </Route>
-        <Route path='/meeting/:name' component={Meeting}/>
+        <Route path='note-and-vote/meeting/:name' component={Meeting}/>
       </Router>
     </Provider>,
       content
