@@ -114,17 +114,13 @@
 	      { history: _reactRouter.browserHistory },
 	      _react2.default.createElement(
 	        _reactRouter.Route,
-	        { path: '/note-and-vote' },
-	        _react2.default.createElement(
-	          _reactRouter.Route,
-	          { component: _app2.default },
-	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _meetingList2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/how', component: _how2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/when', component: _when2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/safety', component: _safety2.default })
-	        ),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/meeting/:name', component: _meeting2.default })
-	      )
+	        { path: '/note-and-vote', component: _app2.default },
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _meetingList2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'note-and-vote/how', component: _how2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'note-and-vote/when', component: _when2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'note-and-vote/safety', component: _safety2.default })
+	      ),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'note-and-vote/meeting/:name', component: _meeting2.default })
 	    )
 	  ), content);
 	}
