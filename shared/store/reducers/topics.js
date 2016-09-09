@@ -10,6 +10,12 @@ const postTopic = new ActionHandler('POST_TOPIC', (topics, action) => {
   return [...topics, {title, by, votes}];
 });
 
+const updateTopicTitle = new ActionHandler('UPDATE_TOPIC_TITLE', (topics, action) =>{
+  const oldTopic = topics.find(topic => topic.title === action.oldTopicTitle);
+  const newTopic = Object.assign({}, oldTopic, {title: action.newTopicTitle});
+  return replace(topics, oldTopic, newTopic);
+});
+
 const removeTpoic = new ActionHandler('REMOVE_TOPIC', (topics, action) => topics.filter(topic => topic.title !== action.id));
 
 const upVote = new ActionHandler('UP_VOTE', (topics, action) => {
@@ -56,7 +62,7 @@ const nextTopic = new ActionHandler('NEXT_TOPIC', topics => {
   return replace(newTopics, newCurrentTopic, modifiedCurrentTopic);
 });
 
-const actions = [joinMeeting, postTopic, removeTpoic, upVote, downVote, discussPhase, nextTopic, deleteMeeting];
+const actions = [joinMeeting, postTopic, updateTopicTitle, removeTpoic, upVote, downVote, discussPhase, nextTopic, deleteMeeting];
 
 const topicReducer = (topics = initialValue, action) => {
   const newTopics = handleActions(actions, topics, action);

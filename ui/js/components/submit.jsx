@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Topic from './topic';
+import Topic from './editableTopic';
 import {connect} from 'react-redux';
 import {postTopic} from '../../../shared/actions';
 import {dispatch} from '../services/socket';

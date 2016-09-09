@@ -13,6 +13,14 @@ const filterMeetings = (meetingFilter) => {
   };
 };
 
+const updateTopicTitle = (newTopicTitle, oldTopicTitle) => {
+  return {
+    type: 'UPDATE_TOPIC_TITLE',
+    newTopicTitle,
+    oldTopicTitle
+  };
+};
+
 const postTopic = (topic, userName) => {
   return {
     type: 'POST_TOPIC',
@@ -177,6 +185,7 @@ export {
   addKnocker,
   createMeeting,
   filterMeetings,
+  updateTopicTitle,
   postTopic,
   changePhase,
   removeTopic,
