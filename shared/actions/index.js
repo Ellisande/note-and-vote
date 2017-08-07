@@ -193,6 +193,5 @@ export {
   shrinkMeeting,
   growMeeting,
   lockedOut,
-  approveKnocker,
   setRoomName
 };
