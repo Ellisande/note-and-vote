@@ -1,17 +1,22 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Safety extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  render(){
+  render() {
     return (
-      <div className='how'>
-        <div className='main-subtitle'><h2>Is It Safe?</h2></div>
-        <div className='how-steps'>
-          No information is permanently saved. When you are done with the meeting all the inforamtion is cleaned up. We don't store the information, or even look at it. Additional security features like locking a room are on the way.
+      <div className="how">
+        <div className="main-subtitle">
+          <h2>Is It Safe?</h2>
         </div>
-      </div>);
+        <div className="how-steps">
+          No information is permanently saved by our site. When you delete your
+          meeting all the data is permanently lost. You can also lock your
+          meetings to limit who can enter.
+        </div>
+      </div>
+    );
   }
 }
 
