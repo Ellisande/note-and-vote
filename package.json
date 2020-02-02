@@ -65,7 +65,7 @@
     "webpack-merge": "^0.8.3"
   },
   "engines": {
-    "node": "6.x"
+    "node": "10.x"
   },
   "license": "Apache-2.0",
   "main": "dist/server/index.js",
@@ -76,5 +76,5 @@
     "test": "babel-node node_modules/.bin/cucumber.js test/server/features --require test/server --compile js:babel-core/register",
     "start": "gulp dist && node dist/server/index.js"
   },
-  "version": "2.1.4"
+  "version": "2.1.5"
 }
