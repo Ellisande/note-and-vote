@@ -10,19 +10,12 @@
     "mocha": true,
     "node": true
   },
-  "extends": [
-    "gobold",
-    "gobold/es6",
-    "gobold/react"
-  ],
   "globals": {
     "chai": true,
     "Primus": true
   },
   "parser": "babel-eslint",
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "rules": {
     "camelcase": 0
   }
