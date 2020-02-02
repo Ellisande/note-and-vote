@@ -486,12 +486,13 @@ input.knock-text {
   flex-direction: column;
   margin-top: -25px;
   padding: 0 10px 10px 10px;
+  font-size: 1.5rem;
 }
 .main-subtitle {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .main-subtitle > * {
@@ -502,7 +503,6 @@ input.knock-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 100px;
   justify-content: space-around;
 }
 .how-step {
