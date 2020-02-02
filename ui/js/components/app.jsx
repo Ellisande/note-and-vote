@@ -69,13 +69,6 @@ class App extends Component {
               >
                 Safety
               </Link>
-              <Link
-                to="/new"
-                className={`${isActive("new")} new`}
-                onClick={this.setActive.bind(this, "new")}
-              >
-                Lock & Knock
-              </Link>
             </div>
           </div>
           <div className="middle-box">
