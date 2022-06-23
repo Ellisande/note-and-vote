@@ -43,7 +43,7 @@
     "gulp-util": "~3.0.6",
     "gulp-webpack": "^1.5.0",
     "istanbul": "^1.0.0-alpha",
-    "jsdom": "^8.0.1",
+    "jsdom": "^16.5.0",
     "json-loader": "^0.5.4",
     "mocha": "^2.3.3",
     "moment": "^2.12.0",
