@@ -1,7 +1,7 @@
 {
   "author": "Justin Dragos <justin.dragos@gmail.com>",
   "dependencies": {
-    "engine.io": "^1.6.9",
+    "engine.io": "^3.6.1",
     "lodash": "^4.10.0",
     "pino": "^2.7.2",
     "primus": "^5.2.0",
